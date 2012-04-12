@@ -6,7 +6,7 @@ When a CSS file and an HTML (or markdown) file fall in love and get married, the
 
 ## Run it
 
-    $ garberize -c thestyle.css -o inlined.html content.md
+    $ garberize -c thestyle.css content.md > inlined.html
 
 ## Excuse it
 
