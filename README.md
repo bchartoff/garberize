@@ -1,12 +1,12 @@
 # garberize
 
-When a CSS file and an HTML file fall in love and get married, they make an HTML file with inlined CSS.
+When a CSS file and an HTML (or markdown) file fall in love and get married, they make an HTML file with inlined CSS.
 
 *This is a prototype; very much an experiment.* I don't know what the final form of this will take, but it appears that it will be useful for some projects.
 
 ## Run it
 
-    $ garberize -h index.html -c thestyle.css -o inlined.html
+    $ garberize -c thestyle.css -o inlined.html content.md
 
 ## Excuse it
 
@@ -17,7 +17,7 @@ Some thing garberize will not do:
 
 ## Example
 
-content.md
+content.md:
 
     # An important headline
 
@@ -33,14 +33,14 @@ content.md
     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-style.css
+style.css:
 
     h1, h2, h3, h4, h5 { font-family: sans-serif; }
     h2 { color: #D64; }
     h3 { color: #F96; }
     p { line-height: 140%; }
 
-Begat:
+begat inlined.html:
 
     <html>
         <body>
